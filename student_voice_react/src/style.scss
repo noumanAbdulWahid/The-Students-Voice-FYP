@@ -1,0 +1,37 @@
+//importing base
+@import 'SCSS/Base/reset';
+
+//importing bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//importing abstract
+@import 'scss/abstract/variables';
+@import 'scss/abstract/mixin';
+
+//theme
+@import "primereact/resources/themes/lara-light-indigo/theme.css";     
+//core
+@import "primereact/resources/primereact.min.css";
+
+//icons
+@import "primeicons/primeicons.css";  
+
+@import 'primeflex/primeflex.scss';
+
+@import '/node_modules/primeflex/primeflex.css';
+
+
+//importing component
+@import 'scss/components/navbar';
+@import 'scss/components/searchbar';
+@import 'scss/components/login';
+@import 'scss/components/registration';
+@import 'scss/components/profile';
+@import 'scss/components/notfound';
+@import 'scss/components/forgotPassword';
+@import 'scss/components/resetPassword';
+@import 'scss/components/createPost';
+@import 'scss/components/loader';
+@import 'scss/components/post';
+@import 'scss/components/PostComments';
+@import 'scss/components/homePage';

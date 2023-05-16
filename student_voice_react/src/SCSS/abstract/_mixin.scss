@@ -1,0 +1,32 @@
+@mixin responsive($breakpoint){
+    @if$breakpoint == 'extraSmall'{
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+    @if$breakpoint == 'small'{
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if$breakpoint == 'medium'{
+        @media (min-width: 767px) and (max-width: 880px) {
+            @content;
+        }
+    }
+    @if$breakpoint == 'large'{
+        @media (min-width: 880px) and (max-width: 1000px) {
+            @content;
+        }
+    }
+    @if$breakpoint == 'xLarge'{
+        @media (min-width: 1000px) and (max-width: 1300px) {
+            @content;
+        }
+    }
+    @if$breakpoint == 'xxLarge'{
+        @media (min-width: 1300px) and (max-width: 1400px) {
+            @content;
+        }
+    }
+}

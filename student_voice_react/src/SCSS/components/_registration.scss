@@ -1,0 +1,33 @@
+.registration-form {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 10px 0;
+    &:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .registration-form {
+      margin: 20px auto;
+      max-width: 100%;
+    }
+  }
+  

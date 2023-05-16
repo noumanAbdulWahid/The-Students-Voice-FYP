@@ -1,0 +1,221 @@
+button{
+  background: none;
+  border: none;
+  padding: 0;
+}
+.post-card {
+    width: 45%;
+    margin: .75rem;
+    border-radius: 20px;
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+
+    .dropdown {
+      position: relative;
+    
+      .dropdown-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: $blue;
+        cursor: pointer;
+        float: right;
+      }
+    
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1;
+        display: none;
+        min-width: 160px;
+        padding: 8px 0;
+        margin: 25px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    
+        &.open {
+          display: block;
+        }
+    
+        li {
+          display: block;
+    
+          a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+    
+            &:hover,
+            &:focus {
+              color: #262626;
+              text-decoration: none;
+              background-color: #f5f5f5;
+            }
+          }
+        }
+      }
+    }
+
+    .user-profile{
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      margin-right: 15px;
+      border-radius: 50%;
+      margin-top: -30px;
+    }
+
+    .name-time{
+      display: inline-block;
+      border-color:$blue ;
+
+      .user-name{
+        font-size: 1.3rem;
+        color: $blue;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+      .post-time{
+        font-size: 0.9rem;
+        color: $blue;
+      }
+    }
+
+    .post-content{
+      margin-top: 20px;
+
+      .show-content{
+        display: block;
+
+        &-btn{
+          display: inline-block;
+          font-weight: bold;
+        }
+      }
+    }
+    
+    .heart, .comment{
+      font-size: 3rem;
+      color: $blue;
+    }
+    .fill-heart{
+      font-size: 3rem;
+      color: rgb(215, 17, 17);
+      opacity: 0.8;
+    }
+    .count{
+      color: $blue;
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+    
+    
+  
+    @media only screen and (min-width: 768px) {
+      .card-img-top {
+        height: 250px;
+      }
+  
+      .post-icons {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+  
+        button {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .no-posts {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    height: 500px;
+  
+    .illustration {
+      margin-bottom: 40px;
+    }
+  
+    .message {
+      text-align: center;
+  
+      h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: $blue;
+      }
+  
+      p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #888;
+      }
+  
+      .button {
+        display: inline-block;
+        background-color: $orange;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: darken($orange, 10%);
+        }
+      }
+    }
+  }
+  
+  
+
+  .p-card .p-card-content {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+  }
+  .p-card .p-card-body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+  }
+  .p-image{
+    width: 100%;
+  }
+  .p-dialog-title{
+    color: $blue;
+  }
+
+  .p-dialog-titlebar-close{
+    color: $blue;
+    box-shadow: $blue;
+  }
+  .p-dialog .p-dialog-header .p-dialog-header-icon{
+    color: $blue;
+    &:focus {
+      box-shadow: 0 0 0 0.15rem $blue;
+    }
+}
+
+.p-image img{
+  max-height: 300px;
+  object-fit: cover;
+  object-position:initial;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}

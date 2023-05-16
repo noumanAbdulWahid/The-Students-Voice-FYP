@@ -1,0 +1,30 @@
+
+.search-bar {
+    margin-top: 13px ;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: var(--white);
+    width: 280px;
+
+    @media (min-width: 770px) and (max-width: 1199px) {
+        width: 220px;
+    }
+}
+  
+.search-icon {
+    margin-right: 10px;
+    color: #777;
+    font-size: 30px;
+}
+  
+.search-bar .inputText {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #333;
+    width: 160px;
+}
+  

@@ -1,0 +1,197 @@
+  .post-container {
+    display: flex;
+    flex-wrap:wrap;
+    margin: 5% 10%;
+
+    @include responsive(large) {
+        display:inline;
+    }
+
+    @include responsive(medium) {
+        display: inline;
+    }
+
+    @include responsive(small) {
+        display: inline;
+    }
+  }
+
+  .sub-container-1 {
+    width: 45%;
+    margin: 10px;
+    background-color: $white;
+    border-radius: 10px;
+
+    .create-post-heading{
+        color: $blue;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin: 30px 10px;
+      
+        label {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: $blue;
+        }
+      }
+
+      .special-text-area {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        height: 140px;
+        color: black;
+
+        &::placeholder {
+          color: #999;
+        }
+      }
+      
+      // .quill-editor {
+      //   border: 1px solid $gray;
+      //   border-radius: 5px;
+      
+      //   .ql-editor {
+      //       border-radius: 5px;
+      //       font-size: 1.2rem;
+      //       padding: 0.5rem;
+      //       min-height: 100%;
+      //     }
+      // }
+
+      .word-counter{
+        float: right;
+        font-weight: bold;
+        opacity: 0.7;
+      }
+
+      #image{
+        display: none;
+      }
+
+      .image_label{
+        margin: 2% 4%;
+        background-color: $gray;
+        color: $blue;
+        padding: 0.4rem 0;
+        opacity: 1;
+        width: 92%;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid $blue;
+        font-weight: 600;
+        
+        &:hover{
+            background-color: $blue;
+            color: $white;
+            border: 1px solid $blue;
+        }
+      }
+
+      // .form-control-file{
+      //   margin-left: 10px;
+      //   border: 2px solid #999;
+      //   background-color: #999;
+      // }
+
+      .btn-primary {
+        background-color: $blue;
+        color: white;
+        margin-top: 10px;
+        border: none;
+        font-weight: 600;
+        width: 90%;
+        text-align: center;
+        margin: 10px 5%;
+        font-size: 1.2rem;
+
+        &:hover{
+            background-color: $gray;
+            color: $blue;
+            border: 1px solid $blue;
+        }
+      }
+
+    @include responsive(large) {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    @include responsive(medium) {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    @include responsive(small) {
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+  }
+  .sub-container-2 {
+    width: 45%;
+    margin: 10px;
+    background-color: $white;
+    overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+
+    .create-post-heading{
+        color: $blue;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top{
+        width: 100%;
+        height: auto;
+    
+        img{
+            width: 100%;
+            height: auto;
+        }
+      }
+    
+    .label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: $blue;
+      }
+
+      @include responsive(large) {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    @include responsive(medium) {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    @include responsive(small) {
+        margin-left: 5%;
+        width: 90%;
+    }
+  }
+  
+  
+  
+
+
+  
+  
+  
+  
